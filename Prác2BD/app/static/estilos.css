@@ -1,0 +1,56 @@
+
+.opciones{
+
+    width: 100%;
+    background-color: crimson;  
+    display: flex;
+    justify-content: center;
+
+}
+
+.kaguya{
+
+    position: relative;
+    right: 8%;
+
+}
+
+
+.listado1{
+
+    list-style: none;      
+    overflow: hidden;
+    margin-top: 5vh;
+    padding: 0;
+    
+}
+
+.boton1{
+
+    float: left;   
+    color: white;    
+    padding: 10px;  
+    
+}
+
+
+.ligas{
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    display: block;
+    color: white;    
+    padding: 18px;
+    text-decoration: none;
+    border-radius: 10px;
+
+}
+
+
+.ligas:hover{
+
+    background-color: tomato;
+    text-decoration: none;
+    color: white;
+
+}

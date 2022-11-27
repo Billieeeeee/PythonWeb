@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!--Css-->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='estilos.css') }}">
+
+    <!--Css 2-->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='estilos2.css') }}">
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  
+
+</head>
+<body>    
+    
+    <div class="opciones container-fluid">
+        <img src="{{ url_for('static', filename='images/kaguyita_2_sin_fondo.png')}}" class="kaguya" alt="Kaguyita">
+            <ul class="listado1">
+                <li class="boton1">
+                    <a href="{{ url_for('index') }}" class="ligas">Inicio</a>
+                </li>
+                <li class="boton1">
+                    <a href="{{ url_for('login') }}" class="ligas">Login</a>
+                </li>                
+                <li class="boton1">
+                    <a href="{{ url_for('prueba') }}" class="ligas">Pruebas</a>
+                </li>
+                <li class="boton1">
+                    <a href="{{ url_for('consulta') }}" class="ligas">Consultas</a>
+                </li>
+            </ul>
+    </div>
+        
+        <div class="contP">
+            <input type="checkbox" id="chk" aria-hidden="true"/>
+                <div class="registro">
+                    <form action="#" method="post">
+                        <label id="lbl" for="chk" aria-hidden="true">Registro</label>
+                            <input id="inpt" type="text" name="nm" placeholder="Nombre"/>
+                            <input id="inpt" type="text" name="ap" placeholder="Apellido Paterno"/>
+                            <input id="inpt" type="text" name="am" placeholder="Apellido Materno"/>
+                        <input type="submit" value="Registro" class="botonS" />
+                    
+                    </form>
+                </div>
+
+                <div class="login">
+                    <form>
+                        <label class="leib" id="lbl" for="chk" aria-hidden="true">Inicio Sesión</label>
+                        <input id="inpt" type="email" name="email" placeholder="Correo electrónico" required>
+                        <input id="inpt" type="password" name="pswd" placeholder="Contraseña" required>
+                        <button class="botonS">Iniciar Sesión</button>
+                    </form>
+                </div>
+
+        </div>
+
+</body>
+</html>

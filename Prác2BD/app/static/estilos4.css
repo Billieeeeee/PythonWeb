@@ -1,0 +1,21 @@
+#contCons{
+
+    width: 45%;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+    color: #ffff;
+    margin-top: 5vh;
+    background-color: #573b8a;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+#contCons:hover{
+
+    background-color: #FFD166;
+    transition: .3s ease-in;
+    color: #000;
+
+}
