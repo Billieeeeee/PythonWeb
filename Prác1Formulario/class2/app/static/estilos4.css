@@ -1,0 +1,13 @@
+#contCons{
+
+    width: 45%;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+    color: #ffff;
+    margin-top: 5vh;
+    background-color: #8338ec;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
