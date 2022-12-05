@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update</title>
+
+        <!--Css-->
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='estilos.css') }}">
+
+        <!--Css 2-->
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Login.css') }}">
+
+        <!--Css 4-->
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Consulta.css') }}">
+        
+        <!--Css 5-->
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Update.css') }}">
+        
+       
+        <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+   
+</head>
+<body>
+    
+    <div class="opciones container-fluid">
+        <img src="{{ url_for('static', filename='images/daram6.png')}}" class="daram" alt="Ramdaram">
+        <ul class="listado1">
+            <li class="boton1">
+               <a href="{{ url_for('index') }}" class="ligas"><img src="{{ url_for('static', filename='images/cat.png')}}" class="homeIcon" alt="Ramdaram"> Inicio</a>
+            </li>
+            <li class="boton1">
+                <a href="{{ url_for('prueba') }}" class="ligas"><img src="{{ url_for('static', filename='images/spiderman.png')}}" class="homeIcon" alt="Ramdaram"> Videojuegos</a>
+            </li>
+            <li class="boton1">
+                <a href="{{ url_for('consulta') }}" class="ligas"><img src="{{ url_for('static', filename='images/search.png')}}" class="homeIcon" alt="Ramdaram"> Consultas</a>
+            </li>
+        </ul>
+    </div>
+              
+<!-- Edit Modal HTML -->
+<div id="editar" class="modal">
+    <div class="modal-dialog">
+        <div class="modal-content" id="mod">
+            <form method="POST" action="/update/{{ foundPrsn.idPersona }}">
+                <div class="modal-header">						
+                    <h4 class="modal-title">Actualizar Persona</h4>
+                    <a href="/Consultas"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button></a>
+                </div>
+                <div class="modal-body">					
+                    <div class="form-group my-2">
+                        <label>Nombre</label>
+                        <input type="text" name="nom2" class="form-control" placeholder="Nombre"  required>
+                    </div>
+                    <div class="form-group my-2">
+                        <label>Apellido Paterno</label>
+                        <input type="text" name="apPat2" class="form-control" placeholder="Apellido Paterno" required>
+                    </div>
+                    <div class="form-group my-2">
+                        <label>Apellido Materno</label>
+                        <input type="text" name="amMat2" class="form-control" placeholder="Apellido Materno" required>
+                    </div>
+                    <div class="form-group my-2">
+                        <label>Correo</label>
+                        <input type="email" name="gmail2" class="form-control" placeholder="Email" required>
+                    </div>
+                    <div class="form-group my-2">
+                        <label>Anime Favorito</label>
+                        <input type="text" name="daram2" class="form-control" placeholder="Tokyo Ghoul" required>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="/Consultas"><input type="button" class="btn btn-default" data-dismiss="modal" value="Cancelar"></a>
+                    <input type="submit" class="btn btn-success" value="Guardar cambios">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>  
+
+</body>
+</html>

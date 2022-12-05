@@ -1,0 +1,22 @@
+#editar{
+
+    position: relative;
+    left: 33%;
+    top: 10vh;
+    width: 20%;
+    border-radius: 10px;
+    margin: 0;
+    padding: 0;
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+}
+
+#mod{
+
+    border-radius: 10px;
+
+}

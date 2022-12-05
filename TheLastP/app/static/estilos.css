@@ -1,0 +1,148 @@
+.opciones{
+
+    width: 100%;
+    background-color: #9B5DE5;  
+    display: flex;
+    justify-content: center;
+
+}
+
+.daram{
+
+    position: relative;
+    right: 15%;
+    width: 20%;
+
+}
+
+.homeIcon{
+
+    width: 5vh;
+
+}
+
+.listado1{
+
+    list-style: none;      
+    overflow: hidden;
+    margin-top: 5vh;
+    padding: 0;
+    
+}
+
+.boton1{
+
+    float: left;   
+    color: white;    
+    padding: 10px;  
+    
+}
+
+
+.ligas{
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+    display: block;
+    color: #fff;    
+    padding: 18px;
+    text-decoration: none;
+    border-radius: 10px;
+
+}
+
+
+.ligas:hover{
+
+    background-color: #EE4266;
+    text-decoration: none;
+    color: white;
+
+}
+
+.fondoIndex{
+
+    width: 100%;
+    min-height: 230vh;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background: url(images/wallpaperpro.jpg) no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.contenedorson{
+
+    width: 100%;
+    height: 130vh;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+}
+
+#daram{
+
+    font-size: 5em;
+    letter-spacing: 10px;
+    font-family: 'Abril Fatface', cursive;
+    color: #fff;
+
+}
+
+#soda{
+
+    font-family: 'Nabla', cursive; 
+
+}
+
+#vid{
+
+    width: 70%;
+    margin-left: 15%;
+
+}
+
+#cartasCont{
+
+    background-color: #ee4267b9;
+    width: 85%;
+    height: 140vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 7%;
+    border-radius: 10px;
+    position: relative;
+    top: 8vh;
+
+}
+
+.card{
+
+    width: 100%;
+
+}
+
+
+
+#cartalu{
+
+    font-size: 25px;
+    color: #fff;
+    
+
+}
+
+#seccion-contacto{
+
+    position: relative;
+    top: 20%;
+
+}
